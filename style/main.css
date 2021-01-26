@@ -1,0 +1,114 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 10px 0px 0px 0px;
+}
+
+h2 { text-align: center; }
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.expePro { 
+    grid-column: 1 / 5;
+    grid-row: 1 / 3;
+
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.expePerso { 
+    grid-column: 1 / 5;
+    grid-row: 3 / 5;
+    
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.studies { 
+    grid-column: 5;
+    grid-row: 2 / 6;
+}
+
+.contact {
+    grid-column: 5;
+    grid-row: 1;
+    
+    margin: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    padding: 0px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.card-header {
+    display: block;
+
+    margin: 0px;
+
+    width: 100%;
+    font-size: 2em;
+
+    text-align: center;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    color: white;
+    background-color: gray;
+}
+
+.expePro article, .expePerso article {
+    display: grid;
+    grid-template: "job  aside"
+                   "org  aside"
+                   "desc aside";
+}
+
+.expePro article h3, .expePerso article h3 {
+    grid-area: job;
+}
+
+.expePro article h4, .expePerso article h4 {
+    grid-area: org;
+}
+
+.expePro article p, .expePerso article p {
+    grid-area: desc;
+}
+
+.expePro article aside, .expePerso article aside {
+    grid-area: aside;
+}
+
+article {
+    margin: 5px;;
+    border: 1px solid black;
+}
