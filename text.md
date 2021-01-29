@@ -22,13 +22,13 @@ Python m'accompagne également dans la création de scripts ou dans mon perfecti
 
 ### 1.2.1. EES Clemessy
 
-Eiffage Energie Systèmes m'a acceuilli en septembre 2018 en tant qu'entreprise d'apprentissage. C'est dans cette branche du groupe Eiffage que j'ai pu progresser jusqu'à mon niveau actuel.  
+Eiffage Energie Systèmes m'a acceuilli, à Mulhouse (68), en septembre 2018 en tant qu'entreprise d'apprentissage. C'est dans cette branche du groupe Eiffage que j'ai pu progresser jusqu'à mon niveau actuel.  
 Au cours de ces trois années d'alternance qui touchent à leur termes, j'ai eu l'occasion de travailler sur divers projets, principalement en Java - mon langage de prédilection - mais également en C# et en ReactJS.  
 Fort de son expérience et de sa notoriété, EES-Clemessy m'a donné l'opportunité de travailler pour des clients de renoms comme le Groupe PSA et Faurecia par exemple.
 
 ### 1.2.2. Sinafis
 
-C'est dans l'objectif de réaliser un stage de fin de DUT que j'ai intégré la startup Sinafis en avril 2018. Produisant des outils de mesures du sols, cette société m'a donné l'occasion de travailler en PHP HTML et CSS afin de lui produire des écrans de gestion qui seront utilisés par ses clients afin qu'ils puissent consulter les mesures faites par leurs capteurs.
+C'est dans l'objectif de réaliser un stage de fin de DUT que j'ai intégré la startup castraise (81) Sinafis en avril 2018. Produisant des outils de mesures du sols, cette société m'a donné l'occasion de travailler en PHP HTML et CSS afin de lui produire des écrans de gestion qui seront utilisés par ses clients afin qu'ils puissent consulter les mesures faites par leurs capteurs.
 
 ## 1.3. Experiences personnelles
 
@@ -47,4 +47,9 @@ C'est après quelques semaines que mon équipe et moi apprenons que nous sommes,
 
 ### 1.4.1. UTBM
 
+Suite à mon DUT, je voulais poursuivre mes études, c'est pourquoi j'ai voulu intégrer l'UTBM en tant qu'alternant. Cette école, à l'opposée de ma région d'origine, m'a attiré par sa bonne réputation, tant au niveau national que dans mon ancien IUT. Suite à deux années d'apprentissage des fondamentaux, j'ai pu passer trois ans à développer mes compétences à la fois techniques et sociales. Cette école m'a donné de nombreuses opportunités. La plus marquante pour moi restera indéniablement mon séjour de 3 mois en Angleterre.  
+Les projets pour lesquels j'ai pu travailler furent également intéressant. Certains m'ont permit de tester mes compétences. D'autres, au contraire, furent l'occasion de découvrir de nouveaux domaines de programmation.
+
 ### 1.4.2. IUT Rodez
+
+C'est après la découverte, au lycée, du vaste monde de la programmation que j'ai su que je voulais en faire mon métier. J'ai donc naturellement poursuivit, après mon Bac, dans ce domaine. Le DUT était pour moi le choix idéal, à mi-chemin entre la théorie et la pratique. Ces deux ans ont été, parmi les plus intenses en apprentissages de ma carrière de développeur étant donné que c'est pendant mon DUT que j'ai construit les fondations de mes connaissances. J'ai également pu, au travers des matières autours de la Communication, travailler mon expression orale et mon savoir-être dans le milieu professionnel. C'est également cette matière qui m'a donné l'occasion de participer à l'App's Challenge.
