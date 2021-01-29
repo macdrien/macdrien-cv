@@ -1,12 +1,21 @@
-body {
+body, p, h1, h2, h3, h4, h5, ul, li, header, section, aside, div {
     margin: 0;
     padding: 0;
+}
 
+body {
     background-image: url("../images/gloomy_grey_by_weissglut_d4tvhcx-fullview.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 
     color: #b0b0b0;
+    text-align: justify;
+    font-size: 1.1em;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
 }
 
 h1 {
@@ -16,6 +25,8 @@ h1 {
 }
 
 h2 {
+    margin: 30px 0 30px 0;
+    font-size: 2.5em;
     color: #dadada;
     text-align: center;
 }
@@ -27,14 +38,11 @@ h3 {
     font-weight: bold;
 }
 
-h4 {
-    font-size: 1.1em;
-}
+h4 { font-size: 1.2em; }
 
-ul {
-    margin: 0;
-    padding: 0;
+h5 { font-size: 1.1em; }
 
+.links {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -45,6 +53,8 @@ a { color: inherit; }
 
 header {
     height: 100vh;
+
+    grid-column: 2 / 12;
 
     display: flex;
     justify-content: center;
@@ -57,98 +67,80 @@ header p {
     font-size: 1.5em;
 }
 
-.content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.expePro { 
-    grid-column: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.expePerso { 
-    grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.studies { 
-    grid-column: 1/3;
-    grid-row: 2;
+section {
+    grid-column: 2 / 12;
 }
 
 article {
-    margin: 5px;
-    border: 5px lightgrey outset;
-}
+    margin: 15px 0 15px 0;
+    padding: 10px;
 
-.experience {
-    padding: 0 10px 3px 10px;
-    display: grid;
-    grid-template: "expeHeader expeHeader"
-                   "desc       aside";
-    height: 175px;
-}
+    border: 5px #b0b0b0 outset;
 
-.expeHeader {
-    margin: 0;
-    padding: 0;
-    grid-area: expeHeader;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content: space-between;
 }
 
-.experience p { grid-area: desc; }
-
-.experience aside {
-    grid-area: aside;
+.mainArticlePart {
+    margin-left: 10px;
+    width: 80%;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-
-    margin: 0 5px 5px 0;
-
-    border: 1px solid darkgrey;
-    border-radius: 10px;
+    align-items: center;
 }
 
-.experience aside h5 {
-    margin: 0;
-    padding: 0;
-    display: block;
+.mainArticlePart h3 {
+    margin: 5px 0 5px 0;
+}
+
+.mainArticlePart h4 {
+    margin: 5px 0 5px 0;
+}
+
+.mainArticlePart p {
+    margin-top: 10px;
+    height: 100%;
+}
+
+aside {
+    margin-left: 10px;
+    padding: 10px 0 10px 10px;
+    width: 20%;
+    border-left: 2px solid #909090;
+}
+
+aside h4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.asideSection {
     width: 100%;
-
-    text-align: center;
-
-    border-bottom: 1px solid darkgrey;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-
-    background-color: darkgrey;
-    color: #303030;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #909090;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
-.technologies {
-    padding-bottom: 5px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border-radius: 10px;
+.asideSection h5 {
+    grid-column: 1 / 3;
+    vertical-align: center;
 }
 
-.technologies li {
-    margin: 0 5px 0 5px;
-    padding: 5px;
-    display: block;
-    text-align: center;
-    width: fit-content;
-    background-color: #b0b0b0;
-    color: black;
-    border-radius: 7px;
+.asideSection p {
+    grid-column: 3 / 6;
+    text-align: left;
+}
+
+.asideSection ul {
+    list-style-type: none;
+    padding-left: 0px;
+    grid-column: 3 / 6;
+    text-align: left;
+}
+
+.asideSection li {
+    text-align: left;
 }
