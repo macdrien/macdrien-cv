@@ -18,6 +18,10 @@ body {
     grid-template-columns: repeat(12, 1fr);
 }
 
+strong {
+    color: #d0d0d0;
+}
+
 h1 {
     color: #ffffff;
     font-size: 5em;
