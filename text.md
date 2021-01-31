@@ -28,7 +28,7 @@ Fort de son expérience et de sa notoriété, EES-Clemessy m'a donné l'opportun
 
 ### 1.2.2. Sinafis
 
-C'est dans l'objectif de réaliser un stage de fin de DUT que j'ai intégré la startup castraise (81) Sinafis en avril 2018. Produisant des outils de mesures du sols, cette société m'a donné l'occasion de travailler en PHP HTML et CSS afin de lui produire des écrans de gestion qui seront utilisés par ses clients afin qu'ils puissent consulter les mesures faites par leurs capteurs.
+C'est dans l'objectif de réaliser un stage de fin de DUT que j'ai intégré la startup castraise (81) Sinafis en avril 2018. Produisant des outils de mesures du sols, cette société m'a donné l'occasion de travailler en PHP HTML et CSS pour créer des écrans de gestion qui seront utilisés par ses clients afin qu'ils puissent consulter les mesures faites par leurs capteurs.
 
 ## 1.3. Experiences personnelles
 
@@ -40,7 +40,7 @@ De plus, ces trois mois d'immersion m'ont permit de voir de l'intérieur la cult
 
 ### 1.3.2. App's Challenge
 
-En octobre 2017, un professeur de l'IUT de Rodez, nous à proposée de participer à un concours local de conception d'application. C'est ainsi que nous concevons un jeu mobile de gestion, à plusieurs échelles, d'infrastructure (maison, quartier, ville, ...) dans le but d'en limiter l'impact écologique.  
+En octobre 2017, un professeur de l'IUT de Rodez nous a proposé de participer à un concours local de conception d'application. C'est ainsi que nous concevons un jeu mobile de gestion, à plusieurs échelles, d'infrastructure (maison, quartier, ville, ...) dans le but d'en limiter l'impact écologique.  
 C'est après quelques semaines que mon équipe et moi apprenons que nous sommes, avec 2 autres équipes de notre promotion, parmi les finalistes du concours. Nous nous retrouvons donc un soir de novembre au sein du salon On Innov' devant un jury composé de personnalités locale mais néanmoins importante pour présenter notre projet. Et c'est ce soir là que notre travail fut récompensé par la première place du concours.
 
 ## 1.4. Etudes
