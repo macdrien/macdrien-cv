@@ -1,20 +1,19 @@
-name: Continious deployment on master
-
+name: CI -> Deploy to My website
 on:
   push:
     branches: 
       - master
-  
 jobs:
-  checkout:
-    uses: actions/checkout@v2
-  deploy:
-    name: FTP deployment
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Deployment
-        uses: macdrien/macdrien-cv@master
+      - uses: actions/checkout@v2
+      # Here is the deployment action
+      - name: Upload from public_html via FTP
+        uses: macdrien/macdrien-cv@latest
         with:
           server: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          local_dir: "./"
+          delete: "false"
