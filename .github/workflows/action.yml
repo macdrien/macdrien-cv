@@ -3,15 +3,18 @@ on:
   push:
     branches: 
       - master
+
 jobs:
-  build:
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      # Here is the deployment action
-      - name: Upload from public_html via FTP
-        uses: macdrien/macdrien-cv@master
-        with:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2.3.2
+    
+    - name: 📂 Sync files
+      uses: macdrien/macdrien-cv@master
+      with:
           server: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
