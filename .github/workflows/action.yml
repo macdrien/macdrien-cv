@@ -2,13 +2,14 @@ name: Continious deployment on master
 
 on:
   push:
-    branches: [master]
+    branches: 
+      - master
   
 jobs:
   deploy:
+    name: FTP deployment
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - name: Deployment
         uses: macdrien/macdrien-cv@master
         with:
