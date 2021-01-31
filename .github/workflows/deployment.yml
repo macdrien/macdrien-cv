@@ -1,0 +1,14 @@
+name: Continious deployment on master
+
+on:
+  push:
+    branches: [master]
+  
+jobs:
+  build:
+    - name: Deploys the website on Infomaniak using FTP
+      uses: macdrien/macdrien-cv@master
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        user: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
