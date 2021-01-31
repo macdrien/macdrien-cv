@@ -164,3 +164,110 @@ footer {
 footer img {
     margin: 0 10px 0 10px;
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    body { 
+        font-size: 35pt;
+        text-align: center;
+    }
+
+    h1 { font-size: 80pt; }
+    h2 { font-size: 50pt; }
+    h3 { font-size: 45pt; }
+    h4 { font-size: 40pt; }
+    h5 {
+        font-size: 35pt;
+        text-align: left
+    }
+
+    header {
+        padding: 0 20px 0 20px;
+        grid-column: 1 / 13;
+        flex-direction: column;
+    }
+
+    header p {
+        margin-top: 25px;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .links { font-size: 30pt; }
+
+    section {
+        grid-column: 1 / 13;
+        padding: 0 20px 20px 20px;
+    }
+
+    article { 
+        flex-direction: column;
+        border: 10px #b0b0b0 outset;
+    }
+
+    .mainArticlePart, aside { width: 100%; }
+
+    aside {
+        border-left: none;
+        border-top: 5px solid #909090;
+        margin: 20px 0 0 0;
+        padding: 10px 0 10px 0;
+        font-size: 28pt;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    body { 
+        font-size: 25pt;
+        text-align: center;
+    }
+
+    h1 { font-size: 80pt; }
+    h2 { font-size: 50pt; }
+    h3 { font-size: 45pt; }
+    h4 { font-size: 40pt; }
+    h5 {
+        font-size: 35pt;
+        text-align: left
+    }
+
+    header {
+        padding: 0 20px 0 20px;
+        grid-column: 1 / 13;
+        flex-direction: column;
+    }
+
+    header p {
+        margin-top: 25px;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    section {
+        grid-column: 1 / 13;
+        padding: 0 20px 20px 20px;
+    }
+
+    article { 
+        flex-direction: column;
+        border: 10px #b0b0b0 outset;
+    }
+
+    .mainArticlePart, aside { width: 100%; }
+
+    aside {
+        border-left: none;
+        border-top: 5px solid #909090;
+        margin: 20px 0 0 0;
+        padding: 10px 0 10px 0;
+        font-size: 28pt;
+    }
+}
