@@ -547,3 +547,146 @@
         margin: 0 10px 0 10px;
     }
 }
+
+/* Style for standard smartphones screens in portrait */
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+    body {
+        text-align: center;
+        font-size: 0.8em;
+
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 5px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    header {
+        grid-column: 1 / 13;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 5px;
+    }
+
+    .headerAndLinks {
+        grid-column: 1 / 5;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headerAndLinks div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header p {
+        grid-column: 5 / 13;
+        display: block;
+    }
+
+    .links {
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background: transparent;
+    }
+
+    section {
+        grid-column: 1 / 13;
+        margin: 0 5px 0 5px;
+    }
+
+    h2 {
+        margin: 30px 0 30px 0;
+        font-size: 1.5em;
+        color: #dadada;
+        text-align: center;
+    }
+
+    article {
+        margin: 15px 0 15px 0;
+        padding: 10px;
+
+        border: 5px #b0b0b0 outset;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    h5 {
+        font-size: 1.1em;
+    }
+
+    .mainArticlePart {
+        text-align: center;
+    }
+
+    .mainArticlePart h3 {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    .mainArticlePart p {
+        margin: 10px 0 10px 0;
+    }
+
+    aside, .asideSection {
+        border-top: 2px solid #909090;
+    }
+
+    aside h4 {
+        margin: 5px 0 5px 0;
+        text-decoration: underline;
+    }
+
+    .asideSection {
+        padding: 10px 0 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: justify;
+        align-items: center;
+    }
+
+    .firstAsideSection { border: none; }
+
+    .asideSection h5 {
+        margin: 0 5px 5px 0;
+        text-align: center;
+    }
+
+    .asideSection li {
+        list-style: none;
+    }
+
+    footer {
+        grid-column: 1 / 13;
+
+        font-size: 1em;
+        margin: 25px 5px 30px 5px;
+        padding-top: 15px;
+
+        justify-content: space-between;
+
+        border-top: 2px solid #909090;
+    }
+
+    footer img {
+        margin: 0 10px 0 10px;
+    }
+}
