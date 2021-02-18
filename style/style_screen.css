@@ -905,6 +905,39 @@
     section {
         grid-column: 2 / 12;
     }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 1311px) {
+    header {
+        grid-column: 2 / 12;
+
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .headerAndLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .links {
+        margin-top: 15px;
+    }
+
+    header p {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    section {
+        grid-column: 2 / 12;
+    }
 
     article {
         display: flex;
@@ -947,42 +980,16 @@
 }
 
 @media only screen and (min-width: 688px) and (max-width: 991px) {
-    header {
-        grid-column: 1 / 13;
-        padding: 0 10px 0 10px;
-
-        height: 100vh;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+    .sub-sections {
+        justify-content: space-between;
     }
 
-    .headerAndLinks {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    h5 {
+        font-size: 1em;
     }
-
-    .links {
-        margin-top: 15px;
-    }
-
-    header p {
-        display: block;
-        font-size: 1.5em;
-    }
-
-    section {
-        grid-column: 1 / 13;
-    }
-
-    footer { grid-column: 1 / 13; }
 }
 
-@media only screen and (max-width: 688px) and (orientation: portrait){
+@media only screen and (max-width: 687px) and (orientation: portrait){
     body { text-align: center; }
 
     header {
