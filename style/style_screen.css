@@ -686,7 +686,9 @@
 }*/
 
 @media only screen {
-    body, ul, li, p, h1, h2, h3, h4, div {
+    body, h1, h2, h3, h4, h5,
+    ul, li, p, div,
+    header, section, article, aside {
         padding: 0;
         margin: 0;
     }
@@ -699,6 +701,7 @@
 
         color: #b0b0b0;
 
+        font-size: 1.1em;
         text-align: justify;
 
         display: grid;
@@ -709,7 +712,7 @@
         height: 100vh;
     }
 
-    h1 { font-size: 4.5em; }
+    h1 { font-size: 4em; }
 
     h2 {
         font-size: 3em;
@@ -736,21 +739,38 @@
         border: 5px solid #b0b0b0;
         border-radius: 10px;
 
+        margin: 25px 0 25px 0;
+
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
 
     h3 {
+        font-size: 2em;
         text-align: center;
     }
 
     h4 {
+        font-size: 1.5em;
         text-align: center;
+        margin: 5px 0 10px 0;
     }
 
-    article p {
-        margin-top: 10px;
+    .mainArticlePart {
+        padding: 10px 10px 10px 10px;
     }
+
+    aside h4 {
+        text-decoration: underline;
+    }
+
+    h5 {
+        font-size: 1.2em;
+        min-width: fit-content;
+        margin-right: 5px;
+    }
+
+    .asideContent { font-size: 0.9em; }
 
     footer {
         display: grid;
@@ -814,6 +834,36 @@
         margin: 5px 0 5px 0;
         padding: 0 10px 0 10px;
         border-left: 2px solid #b0b0b0;
+    }
+
+    .sub-sections {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .asideSection {
+        border-top: 2px solid #b0b0b0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 10px 0 10px 0;
+        padding: 10px 0 10px 0;
+    }
+
+    .asideList {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .asideListContent ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     footer { grid-column: 2 / 12; }
