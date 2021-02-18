@@ -693,6 +693,9 @@
         margin: 0;
     }
 
+    /* TODO To remove when the phone style will be ready */
+    div { overflow: hidden; }
+
     body {
         background-image: url("../images/gloomy_grey_by_weissglut_d4tvhcx-fullview.jpg");
         background-repeat: no-repeat;
