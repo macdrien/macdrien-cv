@@ -37,5 +37,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "./"
+  "homepage": "./",
+  "devDependencies": {
+    "prop-types": "^15.7.2"
+  }
 }
