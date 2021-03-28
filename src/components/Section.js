@@ -1,7 +1,9 @@
-import { Component } from 'react';
+import {Component} from 'react';
 import PropTypes from 'prop-types';
-import { doesExists } from "../tools";
+import {doesExists} from "../tools";
 import Article from "./Article";
+
+import './Section.css';
 
 class Section extends Component {
     Proptypes = {

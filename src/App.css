@@ -1,7 +1,6 @@
 @media only screen {
     body, .App, h1, h2, h3, h4, h5,
-    ul, li, p, div,
-    header, section, aside {
+    ul, li, p, div, header {
         padding: 0;
         margin: 0;
     }
@@ -111,10 +110,6 @@
         font-size: 1.5em;
     }
 
-    section {
-        grid-column: 2 / 12;
-    }
-
     footer {
         grid-column: 2 / 12;
     }
@@ -147,10 +142,6 @@
         display: block;
         font-size: 1.5em;
     }
-
-    section {
-        grid-column: 2 / 12;
-    }
 }
 
 @media only screen and (min-width: 688px) and (max-width: 1311px) {
@@ -179,10 +170,6 @@
     header p {
         display: block;
         font-size: 1.5em;
-    }
-
-    section {
-        grid-column: 2 / 12;
     }
 
     footer {
@@ -241,10 +228,6 @@
         font-size: 1em;
     }
 
-    section {
-        grid-column: 1 / 13;
-    }
-
     footer {
         grid-column: 1 / 13;
     }
@@ -288,10 +271,6 @@
         grid-row: 2;
         width: 100%;
         display: block;
-    }
-
-    section {
-        grid-column: 1 / 13;
     }
 
     footer {
