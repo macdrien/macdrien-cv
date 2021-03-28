@@ -1,0 +1,37 @@
+@media only screen {
+    article {
+        margin: 25px 0 25px 0;
+        padding: 0;
+
+        border: 5px solid #b0b0b0;
+        border-radius: 10px;
+    }
+
+    h3 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .mainArticlePart {
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+@media only screen and (min-width: 1312px) {
+    article {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .mainArticlePart {
+        grid-column: 1 / 4;
+    }
+}
+
+@media only screen and (min-width: 688px) and (max-width: 1311px) {
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

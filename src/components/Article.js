@@ -1,8 +1,10 @@
-import { Component } from 'react';
+import {Component} from 'react';
 import PropTypes from 'prop-types';
 import ReactMarkdown from "react-markdown";
-import { doesExists } from "../tools";
+import {doesExists} from "../tools";
 import Aside from "./Aside";
+
+import './Article.css'
 
 class Article extends Component {
     Proptypes = {

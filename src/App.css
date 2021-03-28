@@ -1,7 +1,7 @@
 @media only screen {
     body, .App, h1, h2, h3, h4, h5,
     ul, li, p, div,
-    header, section, article, aside {
+    header, section, aside {
         padding: 0;
         margin: 0;
     }
@@ -25,7 +25,9 @@
         height: 100vh;
     }
 
-    h1 { font-size: 4em; }
+    h1 {
+        font-size: 4em;
+    }
 
     h2 {
         font-size: 3em;
@@ -46,28 +48,14 @@
         align-items: center;
     }
 
-    a { color: inherit; }
-
-    article {
-        border: 5px solid #b0b0b0;
-        border-radius: 10px;
-
-        margin: 25px 0 25px 0;
-    }
-
-    h3 {
-        font-size: 2em;
-        text-align: center;
+    a {
+        color: inherit;
     }
 
     h4 {
         font-size: 1.5em;
         text-align: center;
         margin: 5px 0 10px 0;
-    }
-
-    .mainArticlePart {
-        padding: 10px 10px 10px 10px;
     }
 
     aside h4 {
@@ -95,8 +83,13 @@
         border-top: 2px solid #b0b0b0;
     }
 
-    .topPage { text-align: left; }
-    .versionNumber { text-align: right; }
+    .topPage {
+        text-align: left;
+    }
+
+    .versionNumber {
+        text-align: right;
+    }
 
     footer div {
         display: flex;
@@ -137,15 +130,6 @@
         grid-column: 2 / 12;
     }
 
-    article {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .mainArticlePart {
-        grid-column: 1 / 4;
-    }
-
     aside {
         grid-column: 4;
 
@@ -184,7 +168,9 @@
         align-items: flex-start;
     }
 
-    footer { grid-column: 2 / 12; }
+    footer {
+        grid-column: 2 / 12;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1311px) {
@@ -252,12 +238,6 @@
         grid-column: 2 / 12;
     }
 
-    article {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
     aside {
         margin: 0 10px 0 10px;
         padding: 10px 0 10px 0;
@@ -286,10 +266,12 @@
 
     .asideListContent ul li:nth-child(2n + 1) {
         grid-column: 1;
-        margin:10px;
+        margin: 10px;
     }
 
-    footer { grid-column: 1 / 13; }
+    footer {
+        grid-column: 1 / 13;
+    }
 }
 
 @media only screen and (min-width: 688px) and (max-width: 991px) {
@@ -302,7 +284,7 @@
     }
 }
 
-@media only screen and (max-width: 687px) and (orientation: portrait){
+@media only screen and (max-width: 687px) and (orientation: portrait) {
     .App {
         font-size: 1em;
         text-align: center;
@@ -328,10 +310,21 @@
         width: 100%;
     }
 
-    h1 { font-size: 2.3em; }
-    h2 { font-size: 1.3em; }
-    h3 { font-size: 1.2em; }
-    h4 { font-size: 1.1em; }
+    h1 {
+        font-size: 2.3em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
 
     .links {
         margin-top: 15px;
@@ -369,18 +362,29 @@
         align-items: center;
     }
 
-    .asideList { flex-direction: column; }
-    .asideListContent { margin-top: 5px }
+    .asideList {
+        flex-direction: column;
+    }
+
+    .asideListContent {
+        margin-top: 5px
+    }
+
     .asideListContent ul {
         display: flex;
         flex-wrap: wrap;
     }
-    .asideListContent li { margin: 0 5px 0 5px; }
 
-    footer { grid-column: 1 / 13; }
+    .asideListContent li {
+        margin: 0 5px 0 5px;
+    }
+
+    footer {
+        grid-column: 1 / 13;
+    }
 }
 
-@media only screen and (max-height: 688px) and (orientation: landscape){
+@media only screen and (max-height: 688px) and (orientation: landscape) {
     .App {
         padding: 0 10px 0 10px;
         text-align: center;
@@ -424,59 +428,6 @@
         grid-column: 1 / 13;
     }
 
-    /*article {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .mainArticlePart {
-        grid-column: 1 / 4;
-    }
-
-    aside {
-        grid-column: 4;
-
-        margin: 5px 0 5px 0;
-        padding: 0 10px 0 10px;
-        border-left: 2px solid #b0b0b0;
-        border-top: none;
-    }
-
-    .subSections {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .asideSection {
-        border-top: 2px solid #b0b0b0;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        margin: 10px 0 10px 0;
-        padding: 10px 0 10px 0;
-    }
-
-    .asideList {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .asideListContent ul {
-        margin-top: 5px;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    .asideListContent ul li {
-        margin: 0 5px 0 5px;
-    }*/
-
     aside {
         margin: 0 10px 0 10px;
         padding: 10px 0 10px 0;
@@ -505,8 +456,10 @@
 
     .asideListContent ul li:nth-child(2n + 1) {
         grid-column: 1;
-        margin:10px;
+        margin: 10px;
     }
 
-    footer { grid-column: 1 / 13; }
+    footer {
+        grid-column: 1 / 13;
+    }
 }
