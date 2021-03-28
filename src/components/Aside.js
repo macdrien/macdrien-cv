@@ -2,6 +2,8 @@ import {Component} from 'react';
 import PropTypes from 'prop-types';
 import {doesExists} from "../tools";
 
+import './Aside.css';
+
 class Aside extends Component {
     PropTypes = {
         children: PropTypes.arrayOf(PropTypes.shape({

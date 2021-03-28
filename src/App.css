@@ -58,21 +58,6 @@
         margin: 5px 0 10px 0;
     }
 
-    aside h4 {
-        text-decoration: underline;
-    }
-
-    h5 {
-        font-size: 1.2em;
-        min-width: fit-content;
-        margin-right: 5px;
-    }
-
-    .asideContent {
-        font-size: 0.9em;
-        text-align: left;
-    }
-
     footer {
         display: grid;
         grid-template-columns: 40% 20% 40%;
@@ -128,44 +113,6 @@
 
     section {
         grid-column: 2 / 12;
-    }
-
-    aside {
-        grid-column: 4;
-
-        margin: 5px 0 5px 0;
-        padding: 0 10px 0 10px;
-        border-left: 2px solid #b0b0b0;
-    }
-
-    .subSections {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .asideSection {
-        border-top: 2px solid #b0b0b0;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        margin: 10px 0 10px 0;
-        padding: 10px 0 10px 0;
-    }
-
-    .asideList {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
-    .asideListContent ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
     }
 
     footer {
@@ -238,49 +185,8 @@
         grid-column: 2 / 12;
     }
 
-    aside {
-        margin: 0 10px 0 10px;
-        padding: 10px 0 10px 0;
-        border-top: 2px solid #b0b0b0;
-    }
-
-    .subSections {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .asideSection {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .asideListContent ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .asideListContent ul li:nth-child(2n) {
-        grid-column: 2;
-    }
-
-    .asideListContent ul li:nth-child(2n + 1) {
-        grid-column: 1;
-        margin: 10px;
-    }
-
     footer {
         grid-column: 1 / 13;
-    }
-}
-
-@media only screen and (min-width: 688px) and (max-width: 991px) {
-    .subSections {
-        justify-content: space-between;
-    }
-
-    h5 {
-        font-size: 1em;
     }
 }
 
@@ -339,46 +245,6 @@
         grid-column: 1 / 13;
     }
 
-    aside {
-        border-top: 2px solid #b0b0b0;
-        margin: 10px 5px 0 5px;
-        padding-top: 10px;
-    }
-
-    .subSections {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .asideSection {
-        margin: 10px 5px 10px 5px;
-        padding: 10px 0 10px 0;
-
-        border-top: 2px dashed #b0b0b0;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .asideList {
-        flex-direction: column;
-    }
-
-    .asideListContent {
-        margin-top: 5px
-    }
-
-    .asideListContent ul {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .asideListContent li {
-        margin: 0 5px 0 5px;
-    }
-
     footer {
         grid-column: 1 / 13;
     }
@@ -426,37 +292,6 @@
 
     section {
         grid-column: 1 / 13;
-    }
-
-    aside {
-        margin: 0 10px 0 10px;
-        padding: 10px 0 10px 0;
-        border-top: 2px solid #b0b0b0;
-    }
-
-    .subSections {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .asideSection {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .asideListContent ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .asideListContent ul li:nth-child(2n) {
-        grid-column: 2;
-    }
-
-    .asideListContent ul li:nth-child(2n + 1) {
-        grid-column: 1;
-        margin: 10px;
     }
 
     footer {
