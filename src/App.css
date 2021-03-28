@@ -1,6 +1,6 @@
 @media only screen {
     body, .App, h1, h2, h3, h4, h5,
-    ul, li, p, div, header {
+    ul, li, p, div {
         padding: 0;
         margin: 0;
     }
@@ -18,14 +18,6 @@
 
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-    }
-
-    header {
-        height: 100vh;
-    }
-
-    h1 {
-        font-size: 4em;
     }
 
     h2 {
@@ -83,95 +75,12 @@
 }
 
 @media only screen and (min-width: 1312px) {
-    header {
-        grid-column: 2 / 12;
-
-        height: 100vh;
-
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .headerAndLinks {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .links {
-        margin-top: 15px;
-    }
-
-    header p {
-        display: block;
-        width: 50%;
-        font-size: 1.5em;
-    }
-
     footer {
         grid-column: 2 / 12;
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1311px) {
-    header {
-        grid-column: 2 / 12;
-
-        height: 100vh;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .headerAndLinks {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .links {
-        margin-top: 15px;
-    }
-
-    header p {
-        display: block;
-        font-size: 1.5em;
-    }
-}
-
 @media only screen and (min-width: 688px) and (max-width: 1311px) {
-    header {
-        grid-column: 2 / 12;
-
-        height: 100vh;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .headerAndLinks {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .links {
-        margin-top: 15px;
-    }
-
-    header p {
-        display: block;
-        font-size: 1.5em;
-    }
-
     footer {
         grid-column: 1 / 13;
     }
@@ -182,29 +91,6 @@
         font-size: 1em;
         text-align: center;
         padding: 0 10px 0 10px;
-    }
-
-    header {
-        grid-column: 1 / 13;
-
-        height: 100vh;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .headerAndLinks {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    h1 {
-        font-size: 2.3em;
     }
 
     h2 {
@@ -219,15 +105,6 @@
         font-size: 1.1em;
     }
 
-    .links {
-        margin-top: 15px;
-    }
-
-    header p {
-        display: block;
-        font-size: 1em;
-    }
-
     footer {
         grid-column: 1 / 13;
     }
@@ -238,39 +115,6 @@
         padding: 0 10px 0 10px;
         text-align: center;
         font-size: 0.8em;
-    }
-
-    header {
-        grid-column: 1 / 13;
-
-        height: 200vh;
-
-        display: grid;
-        grid-template-rows: 100vh 100vh;
-    }
-
-    .headerAndLinks {
-        grid-row: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-    }
-
-    h1 {
-        font-size: 5em;
-    }
-
-    .links {
-        margin-top: 15px;
-    }
-
-    header p {
-        grid-row: 2;
-        width: 100%;
-        display: block;
     }
 
     footer {
