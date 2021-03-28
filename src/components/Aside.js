@@ -2,6 +2,8 @@ import {Component} from 'react';
 import PropTypes from 'prop-types';
 import {doesExists} from "../tools";
 
+import ReactMarkdown from "react-markdown";
+
 import './Aside.css';
 
 class Aside extends Component {
@@ -19,7 +21,7 @@ class Aside extends Component {
             key={key}
         >
             <h5 className='asideTitle'>{element.title}</h5>
-            <p className='asideContent'>{element.text}</p>
+            <ReactMarkdown className='asideContent'>{element.text}</ReactMarkdown>
         </div>;
     }
 
