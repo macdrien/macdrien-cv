@@ -1,7 +1,6 @@
-import { Component } from 'react';
+import {Component} from 'react';
 import PropTypes from 'prop-types';
-import ReactMarkdown from "react-markdown";
-import { doesExists } from "../tools";
+import {doesExists} from "../tools";
 
 class Aside extends Component {
     PropTypes = {
@@ -12,7 +11,7 @@ class Aside extends Component {
         })).isRequired,
     };
 
-    buildTextBlock(element, key, isFirst=false) {
+    buildTextBlock(element, key, isFirst = false) {
         return <div
             className={`asideSection ${isFirst ? 'firstAsideSection' : ''}`}
             key={key}
@@ -22,7 +21,7 @@ class Aside extends Component {
         </div>;
     }
 
-    buildListBlock(element, key, isFirst=false) {
+    buildListBlock(element, key, isFirst = false) {
         return <div
             className={`asideSection asideList ${isFirst ? 'firstAsideSection' : ''}`}
             key={key}
@@ -37,20 +36,20 @@ class Aside extends Component {
     }
 
     render() {
-      return <aside>
-          <h4>Informations</h4>
+        return <aside>
+            <h4>Informations</h4>
 
-          <div className='subSections'>
-              {this.props.children.map((child, index) => {
-                  if (doesExists(child.text))
-                      return this.buildTextBlock(child, index, index === 0);
-                  else if (doesExists(child.list))
-                      return this.buildListBlock(child, index, index === 0);
-                  else
-                      return '';
-              })}
-          </div>
-      </aside>
+            <div className='subSections'>
+                {this.props.children.map((child, index) => {
+                    if (doesExists(child.text))
+                        return this.buildTextBlock(child, index, index === 0);
+                    else if (doesExists(child.list))
+                        return this.buildListBlock(child, index, index === 0);
+                    else
+                        return '';
+                })}
+            </div>
+        </aside>
     };
 }
 
