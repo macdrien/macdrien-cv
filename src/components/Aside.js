@@ -30,7 +30,7 @@ class Aside extends Component {
             <h5 className='asideTitle asideListTitle'>{element.title}</h5>
             <div className='asideContent asideListContent'>
                 <ul>
-                    {element.list.map(element => <li>- {element}</li>)}
+                    {element.list.map((element, index) => <li key={index}>- {element}</li>)}
                 </ul>
             </div>
         </div>;

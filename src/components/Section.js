@@ -23,7 +23,7 @@ class Section extends Component {
             <h2>{this.props.title}</h2>
             {
                 doesExists(this.props.articles) && this.props.articles.length > 0 ?
-                    this.props.articles.map(article => <Article {...article}/>) :
+                    this.props.articles.map((article, index) => <Article {...article} key={index}/>) :
                     ''
             }
         </section>;
