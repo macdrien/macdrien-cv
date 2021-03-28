@@ -48,42 +48,6 @@
         text-align: center;
         margin: 5px 0 10px 0;
     }
-
-    footer {
-        display: grid;
-        grid-template-columns: 40% 20% 40%;
-
-        padding: 25px 0 10px 0;
-        margin: 25px 5px 0 5px;
-
-        border-top: 2px solid #b0b0b0;
-    }
-
-    .topPage {
-        text-align: left;
-    }
-
-    .versionNumber {
-        text-align: right;
-    }
-
-    footer div {
-        display: flex;
-        justify-content: space-between;
-        gap: 5px
-    }
-}
-
-@media only screen and (min-width: 1312px) {
-    footer {
-        grid-column: 2 / 12;
-    }
-}
-
-@media only screen and (min-width: 688px) and (max-width: 1311px) {
-    footer {
-        grid-column: 1 / 13;
-    }
 }
 
 @media only screen and (max-width: 687px) and (orientation: portrait) {
@@ -104,10 +68,6 @@
     h4 {
         font-size: 1.1em;
     }
-
-    footer {
-        grid-column: 1 / 13;
-    }
 }
 
 @media only screen and (max-height: 688px) and (orientation: landscape) {
@@ -115,9 +75,5 @@
         padding: 0 10px 0 10px;
         text-align: center;
         font-size: 0.8em;
-    }
-
-    footer {
-        grid-column: 1 / 13;
     }
 }
