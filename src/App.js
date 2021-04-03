@@ -1,16 +1,25 @@
 import './App.css';
-import data from './data.json';
-import Section from "./components/Section";
-import Header from "./subpages/Header";
-import Footer from "./subpages/Footer";
+import {
+    Route,
+    Router,
+    Switch,
+} from 'react-router-dom';
+import Menu from './subpages/Menu';
+import Main from "./pages/Main";
+import {createBrowserHistory} from 'history';
 
 function App() {
     return (
-        <div className="App">
-            <Header/>
-            {data.map((element, index) => <Section {...element} key={index}/>)}
-            <Footer/>
-        </div>
+        <Router history={createBrowserHistory()}>
+            <Menu/>
+            <div className="App">
+                <Switch>
+                    <Route path='/'>
+                        <Main/>
+                    </Route>
+                </Switch>
+            </div>
+        </Router>
     );
 }
 
