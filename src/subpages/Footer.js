@@ -18,6 +18,6 @@ export default function Footer() {
             </a>
         </div>
 
-        <p className="versionNumber">v2.2.1</p>
+        <p className="versionNumber">v2.3.0</p>
     </footer>;
 }
