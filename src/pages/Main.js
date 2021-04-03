@@ -6,7 +6,8 @@ import Section from "../components/Section";
 import Footer from "../subpages/Footer";
 
 export default function Main() {
-    return <React.Fragment><Header/>
+    return <React.Fragment>
+        <Header/>
         {
             data.map((element, index) => <Section {...element} key={index}/>)
         }
