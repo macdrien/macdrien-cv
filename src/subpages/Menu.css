@@ -10,13 +10,30 @@ nav {
 
     background-color: #0d0d0d;
     color: #cccccc;
+
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
 }
 
 nav ul {
+    grid-column: 2;
     display: flex;
     justify-content: space-around;
 }
 
 nav a {
     text-decoration: none;
+}
+
+nav div {
+    grid-column: 3;
+
+    display: flex;
+    justify-content: flex-end;
+
+    padding-right: 10px;
+}
+
+nav div img {
+    width: 32px;
 }
