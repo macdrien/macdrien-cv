@@ -8,6 +8,7 @@ import {
 import ReactModal from 'react-modal';
 import Menu from './subpages/Menu';
 import Main from "./pages/Main";
+import Resources from "./pages/Resources";
 import {createBrowserHistory} from 'history';
 import cv from './documents/cv_adrien_bouyssou.pdf';
 
@@ -32,6 +33,9 @@ class App extends React.Component {
                     <Switch>
                         <Route path='/'>
                             <Main/>
+                        </Route>
+                        <Route path='/resources'>
+                            <Resources/>
                         </Route>
                     </Switch>
                     <ReactModal isOpen={this.state.isCVModalOpened}
