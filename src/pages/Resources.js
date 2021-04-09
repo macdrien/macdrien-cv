@@ -9,6 +9,7 @@ export default function Resources() {
         {
             links.map(link =>
                 axios.get('http://api.linkpreview.net/?key=' + config.linkPreviewKey + '&q=' + link)
+                    .then(response => response.data)
             )
         }
     </React.Fragment>;
