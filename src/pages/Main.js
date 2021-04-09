@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from "../subpages/Header";
-import data from "../data.json";
+import data from "../resources/data.json";
 import Section from "../components/Section";
 import Footer from "../subpages/Footer";
 
