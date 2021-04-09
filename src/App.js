@@ -31,11 +31,11 @@ class App extends React.Component {
                 <Menu openCVModal={(event) => this.setState({isCVModalOpened: true})}/>
                 <div className="App">
                     <Switch>
-                        <Route path='/'>
-                            <Main/>
-                        </Route>
                         <Route path='/resources'>
                             <Resources/>
+                        </Route>
+                        <Route path='/'>
+                            <Main/>
                         </Route>
                     </Switch>
                     <ReactModal isOpen={this.state.isCVModalOpened}

@@ -14,6 +14,7 @@ export default class Menu extends React.Component {
         return <nav>
             <ul>
                 <li><Link to='/'>Acceuil</Link></li>
+                <li><Link to='/resources'>Ressources</Link></li>
             </ul>
             <div onClick={this.props.openCVModal}>
                 <img src={pdfIcon} alt='PDF icon to my CV'/>
